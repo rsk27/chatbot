@@ -4,3 +4,6 @@ pypdf2
 beautifulsoup4 
 requests 
 python-dotenv
+openai
+pandas
+python-dotenv
