@@ -6,3 +6,4 @@ tiktoken
 openai
 transformers 
 python-dotenv
+bs4
