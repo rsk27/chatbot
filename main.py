@@ -60,12 +60,12 @@ def main():
         embeddings = OpenAIEmbeddings()
         knowledge_base = FAISS.from_texts(strings_list, embedding=embeddings)
 
-        user_question = st.text_input("Ask a question about your PDF")
+        user_question = st.text_input("Ask a question.?")
 
         if user_question:
             docs = knowledge_base.similarity_search(user_question)
             
-            llm = OpenAI(model_name="gpt-3.5-turbo", temperature=0.9)
+            llm = OpenAI(model_name="gpt-3.5-turbo-16k", temperature=0.9)
 
             chain = load_qa_chain(llm, chain_type="stuff")
             with get_openai_callback() as cb:
