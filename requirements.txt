@@ -1,9 +1,8 @@
-streamlit 
-langchain 
-pypdf2 
-beautifulsoup4 
-requests 
-python-dotenv
+langchain
+streamlit
+pypdf2
+faiss-cpu
+tiktoken
 openai
-pandas
+transformers 
 python-dotenv
