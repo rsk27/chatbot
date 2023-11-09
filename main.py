@@ -12,7 +12,7 @@ from langchain.callbacks import get_openai_callback
 import requests
 from bs4 import BeautifulSoup
 import openai 
-from openai.error import APIError
+# from openai.error import APIError
 # Call error on APIError
 APIError.error()
 #os.environ["OPENAI_API_KEY"] = "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"
